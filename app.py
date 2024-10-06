@@ -102,7 +102,7 @@ plt.tight_layout()
 st.pyplot(fig)
 
 
-import_export_value = my_sample.groupby(['Country', 'Import/Export'])['Value'].sum().unstack().fillna(0)
+import_export_value = my_sample.groupby(['Country', 'Import_Export'])['Value'].sum().unstack().fillna(0)
 
 # Streamlit app
 st.title('Import vs. Export Value by Country')
